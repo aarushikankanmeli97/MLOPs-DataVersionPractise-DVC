@@ -13,3 +13,12 @@ Now execute "dvc commit" and then "dvc push"
 Do a git add-commit-push to mark this stage as first version of data
 Now make changes to main.py to append new row in data, check changes via "dvc status"
 Again "dvc commit" and "dvc push"
+Then git add-commit-push (we're saving V2 of our data at this point)
+Check dvc/git status, everything should be upto DataFrame
+Now repeat step 10-12 for v3 data
+
+
+git log --oneline
+git checkout <hash> in order to roll to a particular version of data 
+git checkout main in order to roll back to the latest version of data
+dvc pull
