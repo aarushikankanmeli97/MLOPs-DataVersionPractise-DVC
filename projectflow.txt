@@ -9,3 +9,4 @@ Next "dvc add data/"
     An Error pops up asking to execute these two commands ("git rm -r --cached 'data'" and "git commit -m "stop tracking data"")
     Because initially we were tracking data/ folder fromm git so now we remove it for DVC to handle
 Again execute "dvc add data/" (creates data.dvc) then execute "git add .gitignore data.dvc"
+Now execute "dvc commit" and then "dvc push"
